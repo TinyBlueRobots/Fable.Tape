@@ -1,0 +1,11 @@
+{
+  "projFile": "Main.fsx",
+  "outDir": "out",
+  "targets": {
+    "debug": {
+      "scripts": {
+        "postbuild": "node_modules/.bin/tape -r babel-register out/Main.js"
+      }
+    }
+  }
+}
